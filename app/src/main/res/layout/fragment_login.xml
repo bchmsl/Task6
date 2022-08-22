@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/email"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/password"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20sp"
+        android:text="@string/remember_me"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pbLogin"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        app:indicatorColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@android:color/darker_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
